@@ -128,6 +128,7 @@ if model == 'Decision Tree':
             st.metric(label = "Predicted Adoption", value = 'Adopted')
             st.metric(label = "Prediction Probability", value = f"{probability_max[0]*100:.2f}%")
             st.image("happy_dog.gif", caption="Congratulations!", width=500)
+            st.balloons()
 
 elif model == 'Random Forest':
     prediction = clf_rf.predict(user_encoded_df)
@@ -143,6 +144,8 @@ elif model == 'Random Forest':
             st.metric(label = "Predicted Adoption", value = 'Adopted')
             st.metric(label = "Prediction Probability", value = f"{probability_max[0]*100:.2f}%")
             st.image("happy_dog.gif", caption="Congratulations!", width=500)
+            st.balloons()
+
 
 
 elif model == 'AdaBoost':
@@ -160,6 +163,7 @@ elif model == 'AdaBoost':
             st.metric(label = "Predicted Adoption", value = 'Adopted')
             st.metric(label = "Prediction Probability", value = f"{probability_max[0]*100:.2f}%")
             st.image("happy_dog.gif", caption="Congratulations!", width=500)
+            st.balloons()
     
 elif model == 'Soft Voting':
     prediction = clf_svm.predict(user_encoded_df)
@@ -176,6 +180,7 @@ elif model == 'Soft Voting':
             st.metric(label = "Predicted Adoption", value = 'Adopted')
             st.metric(label = "Prediction Probability", value = f"{probability_max[0]*100:.2f}%")
             st.image("happy_dog.gif", caption="Congratulations!", width=500)
+            st.balloons()
 
 
 
