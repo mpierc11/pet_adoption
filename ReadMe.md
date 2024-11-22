@@ -24,7 +24,7 @@ Welcome to the **Pet Adoption Analysis App**! This app helps you explore and vis
 
 ## 🖥️ App URL
 
-[Access the App Here]()
+[Access the App Here](https://petadoption-pierce.streamlit.app/)
 
 ---
 
@@ -32,7 +32,7 @@ Welcome to the **Pet Adoption Analysis App**! This app helps you explore and vis
 
 Scan the QR code below to open the app on your mobile device:
 
-![QR Code]()
+![QR Code](qrcode.png)
 
 ---
 
