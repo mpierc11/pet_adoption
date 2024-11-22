@@ -1,0 +1,11 @@
+PetType,Breed,AgeMonths,Color,Size,WeightKg,Vaccinated,HealthCondition,TimeInShelterDays,AdoptionFee,PreviousOwner
+Rabbit,Rabbit,34,Orange,Large,0,1,0,20,277,0
+Bird,Parakeet,37,White,Medium,25,0,0,44,231,1
+Dog,Golden Retriever,177,Black,Large,14,1,1,58,318,1
+Cat,Siamese,72,Gray,Small,11,1,0,63,470,1
+Cat,Persian,117,Brown,Medium,3,1,0,40,177,0
+Dog,Labrador,118,Black,Medium,3,0,1,58,500,0
+Rabbit,Rabbit,22,Orange,Small,6,1,0,64,272,0
+Cat,Siamese,141,Gray,Medium,21,0,0,83,408,1
+Dog,Golden Retriever,62,White,Large,22,1,1,48,408,0
+Cat,Persian,122,Gray,Small,4,0,0,19,79,1
