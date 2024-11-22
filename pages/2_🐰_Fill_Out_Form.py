@@ -110,7 +110,7 @@ encode_dummy_df = pd.get_dummies(encode_df, columns=cat_variable)
 user_encoded_df = encode_dummy_df.tail(1)
 
 
-st.write('Please refer to the sidebar to either to manually enter input features.')
+st.write('Please refer to the sidebar to manually enter input features.')
 
 if model == 'Decision Tree':
     prediction = clf_dt.predict(user_encoded_df)

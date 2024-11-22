@@ -25,7 +25,7 @@ with st.sidebar:
     st.write("""
     On this page, you can:
     1. View tips on what to do if your pet will be adopted
-    2. View tips on how you can increase chance your pet will be adopted
+    2. View tips on how you can increase the chance your pet will be adopted
     3. Explore additional pet adoption resources
     """)
 
@@ -61,6 +61,7 @@ st.markdown(
         <li>Promote your pet on social media and other pet adoption websites.</li>
         <li>Reach out to other local shelters and rescue groups for additional support.</li>
         <li>Consider fostering the pet to give them more exposure to potential adopters.</li>
+        <li>Ensure its health and vaccinations are up to date.</li>
     </ul>
     <p style="font-size: 16px;">
     Remember, persistence is key. Many loving homes are waiting for the right pet.

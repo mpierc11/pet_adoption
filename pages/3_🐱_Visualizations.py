@@ -35,7 +35,7 @@ with st.sidebar:
     st.header("🐱 Visualizations")
     st.write("""
     On this page, you can:
-    1. View Feature Importance plot to see which inputs have the msot impact on the prediction.
+    1. View Feature Importance plot to see which inputs have the most impact on the prediction.
     2. View Confusion Matrix to see number of accurate predictions.
     3. View Classification Report for a variety of metrics on the data.
     
