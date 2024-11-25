@@ -40,7 +40,7 @@ with st.sidebar:
     3. View Classification Report for a variety of metrics on the data.
     
     """)
-    st.info("Change which model to see how the plots change!")
+    st.info("Change the model to see how the plots change!")
 
 
 with st.sidebar:
