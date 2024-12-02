@@ -72,7 +72,7 @@ with st.sidebar:
         Size = st.selectbox("Choose animal size", options=df['Size'].unique())
         WeightKg = st.number_input("Enter animal weight", min_value=df['WeightKg'].min(), max_value=df['WeightKg'].max(), step=0.01)
         Vaccinated = st.selectbox("Vaccinated?", options=['Yes', 'No'])
-        HealthCondition = st.selectbox("Healthy animal?", options=['Good', 'Bad'])
+        HealthCondition = st.selectbox("Healthy animal?", options=['Healthy', 'Medical condition'])
         TimeInShelterDays = st.number_input("Enter number of days animal has spend in shelter", min_value=df['TimeInShelterDays'].min(), max_value=df['TimeInShelterDays'].max(), step=1)
         AdoptionFee = st.number_input("Enter adoption fee for animal", min_value=df['TimeInShelterDays'].min(), max_value=df['TimeInShelterDays'].max(), step=1)
         PreviousOwner = st.selectbox("Did the animal have a previous owner?", options=['Yes', 'No'])
@@ -97,7 +97,7 @@ encode_df = df.copy()
 encode_df = encode_df.drop(columns=['Breed'])
 encode_df['Vaccinated'] = encode_df['Vaccinated'].replace({1: 'Yes', 0: 'No'})
 encode_df['PreviousOwner'] = encode_df['PreviousOwner'].replace({1: 'Yes', 0: 'No'})
-encode_df['HealthCondition'] = encode_df['HealthCondition'].replace({1: 'Good', 0: 'Bad'})
+encode_df['HealthCondition'] = encode_df['HealthCondition'].replace({1: 'Medical condition', 0: 'Healthy'})
 encode_df.loc[len(encode_df)] = [PetType, AgeMonths, Color, Size, WeightKg, Vaccinated, HealthCondition, TimeInShelterDays, AdoptionFee, PreviousOwner]
 cat_variable = ['PetType', 'Color', 'Size', 'Vaccinated', 'HealthCondition', 'PreviousOwner']
 

@@ -89,7 +89,7 @@ encode_df = df.copy()
 encode_df = encode_df.drop(columns=['Breed'])
 encode_df['Vaccinated'] = encode_df['Vaccinated'].replace({1: 'Yes', 0: 'No'})
 encode_df['PreviousOwner'] = encode_df['PreviousOwner'].replace({1: 'Yes', 0: 'No'})
-encode_df['HealthCondition'] = encode_df['HealthCondition'].replace({1: 'Good', 0: 'Bad'})
+encode_df['HealthCondition'] = encode_df['HealthCondition'].replace({1: 'Medical condition', 0: 'Healthy'})
 #encode_df.loc[len(encode_df)] = [PetType, AgeMonths, Color, Size, WeightKg, Vaccinated, HealthCondition, TimeInShelterDays, AdoptionFee, PreviousOwner]
 cat_variable = ['PetType', 'Color', 'Size', 'Vaccinated', 'HealthCondition', 'PreviousOwner']
 
@@ -107,7 +107,7 @@ if user_csv is not None:
     user_df = user_df.drop(columns=['Breed'])
     user_df['Vaccinated'] = user_df['Vaccinated'].replace({1: 'Yes', 0: 'No'})
     user_df['PreviousOwner'] = user_df['PreviousOwner'].replace({1: 'Yes', 0: 'No'})
-    user_df['HealthCondition'] = user_df['HealthCondition'].replace({1: 'Good', 0: 'Bad'})
+    user_df['HealthCondition'] = user_df['HealthCondition'].replace({1: 'Medical condition', 0: 'Healthy'})
 
     encode_df = pd.concat([encode_df, user_df])
     encode_dummy_df = pd.get_dummies(encode_df)
